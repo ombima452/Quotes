@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 An application that enables users to add quotes,delete quotes.The user is also able to see already existing quotes and the author and can upvote and downvote on the quotes and even delete.
 
 
-###Author
+### Author
 Christine Ombima
 
 ### Behaviour Driven Development(BDD)
@@ -30,7 +30,7 @@ f).The user can up vote or down vote a quote.
 
 3.Run ng serve from your terminal.
 
-###Technologies used
+### Technologies used
 
 Angular ClI
 
