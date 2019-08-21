@@ -30,7 +30,8 @@ f).The user can up vote or down vote a quote.
 
 3.Run ng serve from your terminal.
 
-##Technologies used
+###Technologies used
+
 Angular ClI
 
 HTML
