@@ -32,7 +32,7 @@ f).The user can up vote or down vote a quote.
 
 ### Technologies used
 
-Angular ClI
+Angular Cli
 
 HTML
 
