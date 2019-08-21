@@ -1,0 +1,15 @@
+<div>
+    <br>
+    <p> Author{{quote.author}}</p>
+    <p>Submitted by:{{quote.submittedBy}}</p>
+</div>
+<div>
+    <span><i class="fa fa-thumbs-up" (click)="upVote()"></i></span>
+    {{upvotes}}
+    <span><i class="fa fa-thumbs-down" (click)="downVote()"></i></span>
+    {{downvotes}}
+</div>
+<p>This quote was posted {{quote.completeDate|dateCount}} days ago</p>
+<div>
+   <button (click)= 'quoteDelete(true)' class="btn btn-secondary btn-sm" style='margin-left: 30%'>Delete Quote</button>
+</div>

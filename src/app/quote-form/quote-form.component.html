@@ -1,0 +1,33 @@
+
+
+<form action="" (ngSubmit)='submitQuote()' #goalForm='ngForm'>
+    <h2>Create Your Own Quote</h2>
+  <div class="form-group">
+    <label for="name">Quote</label>
+    <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel">
+    <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+      <p>Name is required</p>
+    </div>
+    
+<br>
+    <label for="author">Author</label>
+    <input type="text" class="form-control" [(ngModel)]="newQuote.author" #author="ngModel" name="author">
+    <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+      <p>Author is required</p>
+    </div>
+
+    <label for="submittedBy">Submitted by</label>
+    <input type="text" class="form-control" id="submittedBy" [(ngModel)]="newQuote.submittedBy" #submittedBy="ngModel" name="submittedBy" >
+    <div [hidden]="submittedBy.valid || submittedBy.pristine" class="alert alert-danger">
+        <p>Name is required</p>
+      </div>
+
+    <br>
+    <label for="completeDate">Date</label>
+    <input type="date" [(ngModel)]="newQuote.completeDate" #completeDate="ngModel" name="completeDate" class="form-control">
+    
+    <button style="width: 70%; margin-left:10%; margin-top: 5%; " class="btn btn-secondary btn-lg btn-block">Add
+      Quote</button>
+
+  </div>
+</form> 

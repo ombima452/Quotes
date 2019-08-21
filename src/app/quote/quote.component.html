@@ -1,0 +1,29 @@
+
+    <h1  style="text-align:center">
+        "Quotes To Remember"
+      </h1>
+      <br>
+      <div class="overlay">
+        <div class="row">
+        <div class="col-md-6">
+          <br><br><br>
+          <h2 style="text-align: center;">My Quotes</h2>
+          <div *ngFor='let quote of quotes;let i=index' >
+      <ul>
+        <li appHighlight class="card" style="width: 25rem; margin-left: 10%">
+          {{quote.name}} 
+          <button (click)='toggleDetails(i)'class="btn btn-secondary btn-sm">Show More Deatails</button>
+          <app-quote-detail [quote]='quote' (isComplete)='quoteDelete($event,i)' *ngIf='quote.showAuthor'></app-quote-detail>
+        </li>
+      </ul>
+    </div>
+    </div>
+  
+    <div class="col-md-6">
+      
+      <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
+    </div>
+  </div>
+    </div>
+    
+  
